@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".activity.user.Payment">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:background="@drawable/linearlayout_blue">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo2"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <!--Telp-->
+            <LinearLayout
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:paddingStart="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="RtlSymmetry">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:id="@+id/laundryprofile"
+                    android:layout_height="@dimen/_50sdp"
+                    app:civ_border_color="#000"
+                    app:civ_border_width="2dp"
+                    android:background="@drawable/user"/>
+                <TextView
+                    android:id="@+id/namalaundry"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="Ramadhan"/>
+            </LinearLayout>
+
+            <!--Telp-->
+            <LinearLayout
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:paddingStart="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="RtlSymmetry">
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/ic_phone"/>
+                <TextView
+                    android:id="@+id/telplaundry"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="+266 225 225"/>
+            </LinearLayout>
+
+            <!--Alamat-->
+            <LinearLayout
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:paddingStart="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="RtlSymmetry">
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/ic_pin"/>
+                <TextView
+                    android:id="@+id/alamatlaundry"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_13ssp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="Add to group"
+                    tools:ignore="RtlSymmetry" />
+            </LinearLayout>
+
+            <!--Weight-->
+            <LinearLayout
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:paddingStart="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="RtlSymmetry">
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/weight"/>
+                <TextView
+                    android:id="@+id/beratlaundry"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:textSize="@dimen/_13ssp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="Belum ada data"/>
+            </LinearLayout>
+
+            <!--Humidity-->
+            <LinearLayout
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:paddingStart="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="RtlSymmetry">
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/humidity"/>
+                <TextView
+                    android:id="@+id/humilaundry"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_13ssp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="Belum ada data"
+                    tools:ignore="RtlSymmetry" />
+            </LinearLayout>
+
+            <!--Price-->
+            <LinearLayout
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:paddingStart="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="RtlSymmetry">
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/ic_money"/>
+                <TextView
+                    android:id="@+id/hargalaundry"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_13ssp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="Belum ada data"
+                    tools:ignore="RtlSymmetry" />
+            </LinearLayout>
+
+            <!--Tombol-->
+            <LinearLayout
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <Button
+                        android:layout_gravity="center"
+                        android:id="@+id/refreshlaundry"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/round_blue"
+                        android:fontFamily="@font/acme"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:text="Get data"
+                        android:textColor="#FFF"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <Button
+                        android:layout_gravity="center"
+                        android:id="@+id/submitlaundry"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="40dp"
+                        android:enabled="false"
+                        android:fontFamily="@font/acme"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:text="Submit"
+                        android:textColor="#FFF"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

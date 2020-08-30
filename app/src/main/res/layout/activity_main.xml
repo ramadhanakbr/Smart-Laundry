@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.user.MainActivity">
+    <FrameLayout
+        android:background="@drawable/linearlayout_blue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_130sdp"
+        android:id="@+id/fr1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo2"
+            android:contentDescription="@string/todo" />
+    </FrameLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:visibility="gone"
+        android:id="@+id/avi"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_centerInParent="true"
+        style="@style/AVLoadingIndicatorView.Large"
+        app:indicatorColor="@color/orange"
+        app:indicatorName="@string/indicator"/>
+
+    <LinearLayout
+        android:id="@+id/llmain"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/goprofile"
+            android:layout_marginTop="@dimen/_55sdp"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/orange">
+            <RelativeLayout
+                android:padding="@dimen/_4sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_toEndOf="@+id/imgprofile"
+                    android:id="@+id/tvname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Loading ... "
+                    android:textSize="@dimen/_15ssp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="#FFF"
+                    android:layout_marginStart="@dimen/_10sdp"/>
+                <TextView
+                    android:layout_below="@+id/tvname"
+                    android:layout_toEndOf="@+id/imgprofile"
+                    android:id="@+id/tvsaldo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Loading .. "
+                    android:textSize="@dimen/_13ssp"
+                    android:fontFamily="@font/acme"
+                    android:textColor="#FFF"
+                    android:layout_marginStart="@dimen/_10sdp"/>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:id="@+id/imgprofile"
+                    android:src="@drawable/user"
+                    android:layout_height="80dp"
+                    android:layout_alignParentStart="true"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/golaundry"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/orange">
+            <RelativeLayout
+                android:padding="@dimen/_4sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payment"
+                    android:textSize="@dimen/_15ssp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="#FFF"
+                    android:layout_marginStart="@dimen/_10sdp"/>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:id="@+id/pay"
+                    android:src="@drawable/payment"
+                    android:layout_height="80dp"
+                    android:layout_alignParentStart="true"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/golaundrylist"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/orange">
+            <RelativeLayout
+                android:padding="@dimen/_4sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imgbasket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My Laundry "
+                    android:textSize="@dimen/_15ssp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="#FFF"
+                    android:layout_marginStart="@dimen/_10sdp"/>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:id="@+id/imgbasket"
+                    android:src="@drawable/laundry"
+                    android:layout_height="80dp"
+                    android:layout_alignParentStart="true"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/gopament"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/orange">
+            <RelativeLayout
+                android:padding="@dimen/_4sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imgpayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My Basket "
+                    android:textSize="@dimen/_15ssp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="#FFF"
+                    android:layout_marginStart="@dimen/_10sdp"/>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:id="@+id/imgpayment"
+                    android:src="@drawable/basket"
+                    android:layout_height="80dp"
+                    android:layout_alignParentStart="true"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/goin"
+            android:visibility="visible"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/orange">
+            <RelativeLayout
+                android:padding="@dimen/_4sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Information "
+                    android:textSize="@dimen/_15ssp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="#FFF"
+                    android:layout_marginStart="@dimen/_10sdp"/>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:id="@+id/help"
+                    android:src="@drawable/ic_info"
+                    android:layout_height="80dp"
+                    android:layout_alignParentStart="true"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:background="@drawable/liniearlayout_blue2"
+        android:layout_alignParentBottom="true">
+    </LinearLayout>
+</RelativeLayout>

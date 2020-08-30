@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.auth.LoginActivity">
+    <FrameLayout
+        android:background="@drawable/linearlayout_blue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:id="@+id/fr1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo2"
+            android:contentDescription="@string/todo" />
+    </FrameLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout1"
+        android:layout_marginTop="@dimen/_230sdp"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="E-mail"
+        android:textColorHint="#000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fr1"
+        app:layout_constraintVertical_bias="0.3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailogin"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="60dp"
+            android:drawableStart="@drawable/mail"
+            android:drawablePadding="@dimen/_8sdp"
+            android:inputType="textEmailAddress"
+            android:textColor="#000" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textInputLayout2"
+        android:layout_below="@+id/textInputLayout1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Password"
+        app:passwordToggleEnabled="true"
+        android:textColorHint="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout1"
+        app:layout_constraintVertical_bias="0.3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/loginpsswd"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="60dp"
+            android:drawableStart="@drawable/pswd"
+            android:drawablePadding="@dimen/_8sdp"
+            android:inputType="textPassword"
+            android:textColor="#000"
+            android:textStyle="normal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textInputLayout2"
+        android:id="@+id/tvforgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/acme"
+        android:text="Forgot Your Password !"
+        android:textAlignment="center"
+        android:textColor="@color/background"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayout2" />
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvforgot"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/btnsignin"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_btn"
+        android:fontFamily="@font/acme"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="@string/l_o_g_i_n"
+        android:textColor="#FFF"
+        android:textSize="@dimen/_17ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvforgot" />
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:visibility="invisible"
+        style="@style/AVLoadingIndicatorView.Large"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:foregroundGravity="center"
+        android:textAlignment="center"
+        app:indicatorColor="@color/orange"
+        app:indicatorName="BallClipRotatePulseIndicator"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/tvforgot"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/loadinglogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:background="@drawable/liniearlayout_blue2"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/tvregis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/acme"
+            android:text="Belum Punya Akun.? Sign Up"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="@dimen/_15ssp"
+            />
+    </LinearLayout>
+</RelativeLayout>

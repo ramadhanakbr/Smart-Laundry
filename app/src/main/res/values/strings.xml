@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">SmartLaundry</string>
+    <string name="todo">TODO</string>
+    <string name="l_o_g_i_n">Sign In</string>
+    <string name="indicator">BallClipRotatePulseIndicator</string>
+    <string name="cukup_masukan_email_terdaftar_anda_untuk_melakukan_reset_password">Cukup Masukan Email Terdaftar Anda \n Untuk Melakukan Reset Password</string>
+    <string name="xxx">xxxx</string>
+    <string-array name="list1">
+        <item>-Pilih-</item>
+        <item>Jemput Pakaian</item>
+    </string-array>
+    <string-array name="list2">
+        <item>-Pilih-</item>
+        <item>Pencucian</item>
+    </string-array>
+    <string-array name="list3">
+        <item>-Pilih-</item>
+        <item>Selesai</item>
+    </string-array>
+
+    <string name="action_settings">Settings</string>
+    <string name="btn_send_token">Send Token</string>
+    <string name="btn_send_tokens">Send Tokens</string>
+    <string name="btn_send_topic">Send Topic</string>
+    <string name="btn_show_token">Show Token</string>
+    <string name="btn_subscribe_news">Subscribe (News)</string>
+    <string name="btn_unsubscribe_news">Unsubscribe (News)</string>
+    <string name="notification_channel_id">default</string>
+    <string name="result">Something will happen here&#8230;</string>
+    <string name="subscribed">Subscribed to news topic</string>
+    <string name="unsubscribed">Unsubscribed from news topic</string>
+    <string name="NEWS_CHANNEL_ID">news</string>
+    <string name="CHANNEL_NEWS">News</string>
+    <string name="CHANNEL_DESCRIPTION">Get informed with new updates</string>
+    <string name="DEBUG_TAG">LearningPushNotification</string>
+</resources>

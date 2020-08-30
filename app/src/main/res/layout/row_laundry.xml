@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="8dp"
+    android:elevation="8dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/row_tanggal"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13ssp"
+            android:text="Senin,12 Mey 2020"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="#FFF"
+            android:paddingStart="15dp"
+            tools:ignore="RtlSymmetry" />
+        <com.baoyachi.stepview.HorizontalStepView
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="match_parent"
+            android:id="@+id/horistep"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

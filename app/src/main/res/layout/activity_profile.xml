@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.user.ProfileActivity">
+
+    <LinearLayout
+        android:id="@+id/llotp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_170sdp"
+        android:background="@color/background"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/gambardetail"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_gravity="center"
+            android:paddingTop="@dimen/_5sdp"
+            android:src="@drawable/user"
+            app:civ_border_color="#FFF"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/profilenama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Ramdhan"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="@dimen/_17ssp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llotp"
+        app:layout_constraintVertical_bias="0.18">
+        <!--Saldo-->
+        <LinearLayout
+            android:id="@+id/llsaldo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:paddingStart="25dp"
+            tools:ignore="RtlSymmetry">
+
+            <ImageView
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:src="@drawable/ic_dompet" />
+
+            <TextView
+                android:id="@+id/profilesaldo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingStart="20dp"
+                android:text="Rp.1000"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <!--Email-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:paddingStart="25dp"
+            tools:ignore="RtlSymmetry">
+
+            <ImageView
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:src="@drawable/ic_email" />
+
+            <TextView
+                android:id="@+id/profileemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingStart="20dp"
+                android:text="Wiliam@gmail.com"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="bold"
+                tools:ignore="RtlSymmetry" />
+        </LinearLayout>
+
+        <!--Telp-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:paddingStart="25dp"
+            tools:ignore="RtlSymmetry">
+
+            <ImageView
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:src="@drawable/ic_phone" />
+
+            <TextView
+                android:id="@+id/profilehp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingStart="20dp"
+                android:text="+266 225 225"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!--Alamat-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:paddingStart="25dp"
+            tools:ignore="RtlSymmetry">
+
+            <ImageView
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:src="@drawable/ic_pin" />
+
+            <TextView
+                android:id="@+id/alamatprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingStart="20dp"
+                android:text="Add to group"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="bold"
+                tools:ignore="RtlSymmetry" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--Tombol-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:id="@+id/llbutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll2"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/signout"
+                android:layout_width="@dimen/_93sdp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_red"
+                android:fontFamily="@font/acme"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="Sign Out"
+                android:textColor="#FFF"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/edtprofile"
+                android:layout_width="@dimen/_93sdp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/round"
+                android:fontFamily="@font/acme"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="Edit Profile"
+                android:textColor="#FFF"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btntopup"
+                android:layout_width="@dimen/_93sdp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/round_blue"
+                android:fontFamily="@font/acme"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="Top Up"
+                android:textColor="#FFF"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

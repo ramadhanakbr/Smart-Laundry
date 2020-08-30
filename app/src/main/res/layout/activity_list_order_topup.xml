@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.admin.ListOrderTopup">
+    <FrameLayout
+        android:background="@drawable/linearlayout_blue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:id="@+id/fr1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo2"
+            android:contentDescription="@string/todo" />
+    </FrameLayout>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchAbsen"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:visibility="gone"
+        app:queryHint="Input Tanggal" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        tools:listitem="@layout/row_user"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/fr1"
+        android:id="@+id/rcvtopupadmin"/>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:visibility="gone"
+        android:id="@+id/avilisttopupadmin"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_centerInParent="true"
+        style="@style/AVLoadingIndicatorView.Large"
+        app:indicatorColor="@color/orange"
+        app:indicatorName="@string/indicator"/>
+
+
+
+
+</RelativeLayout>

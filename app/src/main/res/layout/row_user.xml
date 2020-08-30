@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/goprofile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/orange"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_4sdp">
+
+            <TextView
+                android:id="@+id/nametopup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_toEndOf="@+id/imgtopup"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Loading ... "
+                android:textColor="#FFF"
+                android:textSize="@dimen/_15ssp" />
+
+            <TextView
+                android:id="@+id/saldotopup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nametopup"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_toEndOf="@+id/imgtopup"
+                android:fontFamily="@font/acme"
+                android:text="Loading .. "
+                android:textColor="#FFF"
+                android:textSize="@dimen/_13ssp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgtopup"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/user" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

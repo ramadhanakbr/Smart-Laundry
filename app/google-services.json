@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "76200132237",
+    "firebase_url": "https://smartlaundry-c169d.firebaseio.com",
+    "project_id": "smartlaundry-c169d",
+    "storage_bucket": "smartlaundry-c169d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:76200132237:android:1983ec88d85eff80ec6cc4",
+        "android_client_info": {
+          "package_name": "com.example.smartlaundry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "76200132237-4drh92dj6b4vkjhcspalpfdoi266ud72.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.smartlaundry",
+            "certificate_hash": "aab0ffa0c804f3038236809e44e6ad47c9855df3"
+          }
+        },
+        {
+          "client_id": "76200132237-tfqdapc8c90lgu9ek3kb55c0af6bjsk8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAXigtyOBRfsjiZU1mzQkacKVnDIkrAFs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "76200132237-tfqdapc8c90lgu9ek3kb55c0af6bjsk8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

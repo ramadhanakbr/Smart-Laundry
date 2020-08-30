@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".activity.admin.DetailTopUp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:background="@drawable/linearlayout_blue">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo2"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+
+            <!--Nama-->
+            <LinearLayout
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:paddingStart="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="RtlSymmetry">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:id="@+id/adminimgdetailtopup"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="@dimen/_50sdp"
+                    app:civ_border_color="#000"
+                    android:src="@drawable/user"
+                    app:civ_border_width="2dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="20dp"
+                        android:text="Nama Pelanggan"/>
+                    <TextView
+                        android:id="@+id/detailnamatopup"
+                        android:textSize="@dimen/_14ssp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="20dp"
+                        android:text=" "/>
+                </LinearLayout>
+            </LinearLayout>
+            <!--Price-->
+            <LinearLayout
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:paddingStart="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="RtlSymmetry">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/ic_money"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="20dp"
+                        android:text="Jumlah"/>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/detailsaldo"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_13ssp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="20dp"
+                            android:text="Belum ada Data"
+                            tools:ignore="RtlSymmetry" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_250sdp"
+                android:id="@+id/buktigambar"/>
+            <Button
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_gravity="center"
+                android:id="@+id/confirmtopup"
+                android:layout_width="@dimen/_220sdp"
+                android:layout_height="40dp"
+                android:background="@drawable/round_blue"
+                android:fontFamily="@font/acme"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="Confirm"
+                android:textColor="#FFF"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>
